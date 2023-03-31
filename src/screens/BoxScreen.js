@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     // flexDirection: 'row',
     height: 200,
     // justifyContent: 'flex-end'//'flex-start'-default'center', 'space-between', 'space-around'
-    alignItems: 'center'
   },
   textOneStyle: {
     borderWidth: 3,
@@ -33,8 +32,16 @@ const styles = StyleSheet.create({
     //flex operates in the same direction as the current value of flexDirection
     // flex: 4
     //alignSelf: 'stretch'//'center', 'flex-start' etc., the same as alignItems property for the parent
-    position: 'absolute', //'relative' is the default value
-    fontSize: 18
+    // position: 'absolute', //'relative' is the default value
+    //left: 10 //also, top, bottom, right for added padding in these directions
+
+    //these 5 below can be replaced with ...StyleSheet.absoluteFillObject
+    // position: 'absolute',
+    // top: 0,
+    // right: 0,
+    // bottom: 0,
+    // left: 0
+    ...StyleSheet.absoluteFillObject,
   },
   textThreeStyle: {
     borderWidth: 3,
