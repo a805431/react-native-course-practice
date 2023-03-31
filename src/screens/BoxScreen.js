@@ -32,7 +32,9 @@ const styles = StyleSheet.create({
     //flex: 1 causes child 2 to expand and take up as much vertical space as it possibly can
     //flex operates in the same direction as the current value of flexDirection
     // flex: 4
-    alignSelf: 'stretch'//'center', 'flex-start' etc., the same as alignItems property for the parent
+    //alignSelf: 'stretch'//'center', 'flex-start' etc., the same as alignItems property for the parent
+    position: 'absolute', //'relative' is the default value
+    fontSize: 18
   },
   textThreeStyle: {
     borderWidth: 3,
