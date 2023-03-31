@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     //alignItems: 'flex-end' //или 'flex-start', или 'center', default is stretch
     flexDirection: 'row',
     height: 200,
-    alignItems: 'flex-start'
+    justifyContent: 'flex-end'//'flex-start'-default'center', 'space-between', 'space-around'
   },
   textStyle: {
     borderWidth: 3,
