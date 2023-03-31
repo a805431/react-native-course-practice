@@ -6,7 +6,7 @@ const TextScreen = () => {
 
   return (
     <View>
-      <Text>Enter Name:</Text>
+      <Text>Enter Password:</Text>
       <TextInput
         // autoCapitalize and autoCorrect props added, so input is not capitalized and spellchecked in iOS
         style={styles.input}
@@ -15,7 +15,9 @@ const TextScreen = () => {
         value={name}
         onChangeText={(newValue) => setName(newValue)}
       />
-      <Text>My name is: {name}</Text>
+      {name.length <= 5 ? (
+        <Text>Password must be longer than 5 characters</Text>
+      ) : null}
     </View>
   );
 };
